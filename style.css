@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background-color:rgb(200, 242, 255);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+h1{
+    font-family: monospace;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(5, 241, 104);
+    color: white;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+.score{
+    float: left;
+    padding: 10px 0 5px 0;
+    font-size: 20px;
+}
+
+.grid{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background:rgb(95, 164, 255);
+    border-radius: 23px;
+}
+
+.grid div{
+    width: 50px;
+    height: 50px;
+}
+
+.snake{
+    background-color: rgb(5, 241, 104);
+    border-radius: 50%;
+}
+
+.apple{
+    background-color:rgb(255, 102, 102);
+    border-radius: 50%;
+}
+
+.eye{
+    width: 5px;
+    padding:10px;
+    height: 5px;
+    color:black;
+}
+
+@media screen and (max-width: 520px) {
+    .grid{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .grid div{
+        width: 30px;
+        height: 30px;
+    }
+}
+
