@@ -90,6 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
         direction = +width //if we press down, the snake head will instantly appear in the div ten divs from where you are now
       }
     }
+
+    document.querySelector('#up').addEventListener('click', () => direction = -width)
+    document.querySelector('#down').addEventListener('click', () => direction = +width)
+    document.querySelector('#left').addEventListener('click', () => direction = -1)
+    document.querySelector('#right').addEventListener('click', () => direction = +1)
   
     document.addEventListener('keyup', control)
     startBtn.addEventListener('click', startGame)

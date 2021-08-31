@@ -79,6 +79,10 @@ button:focus{
     color:black;
 }
 
+.controls{
+    display: none;
+}
+
 @media screen and (max-width: 520px) {
     .grid{
         width: 300px;
@@ -89,5 +93,43 @@ button:focus{
         width: 30px;
         height: 30px;
     }
+
+    .controls{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 110px;
+        margin-top: 10px;
+    }
+
+    .control{
+        width: 30px;
+        height: 30px;
+        background: rgb(255, 176, 5);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+        border-radius: 5px;
+    }
+
+    .control:hover{
+        background: rgb(255, 218, 139);
+    }
+
+    .inactive{
+        background: transparent;
+    }
+
+    .inactive:hover{
+        background: transparent;
+    }
+
+
+    .control i{
+        color: white;
+    }
+
 }
 
